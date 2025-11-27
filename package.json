@@ -1,0 +1,11 @@
+{
+  "name": "oxbridge-lms",
+  "version": "1.0.0",
+  "description": "OXBRIDGE Learning Management System",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required for static site'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

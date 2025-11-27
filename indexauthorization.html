@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OXBRIDGE - Login & Registration</title>
+    <link rel="stylesheet" href="authorization.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-section">
+            <div class="logo">📚 OXBRIDGE</div>
+            <h1>Welcome to OXBRIDGE</h1>
+            <p>Unlock your potential with our expert-led courses. Join thousands of students who are advancing their careers with OXBRIDGE.</p>
+            <div class="feature-list">
+                <p>✓ 100+ Expert Courses</p>
+                <p>✓ Learn at Your Own Pace</p>
+                <p>✓ Certificate of Completion</p>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <!-- Login Form -->
+            <div class="form-container" id="login-form">
+                <h2 class="form-title">Sign In</h2>
+                <p class="form-subtitle">Welcome back! Please sign in to your account.</p>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                        <div class="error-message" id="login-email-error">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                        <div class="error-message" id="login-password-error">Password must be at least 6 characters</div>
+                    </div>
+                    
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
+                
+                <div class="toggle-form">
+                    Don't have an account? <a href="#" id="show-register">Sign Up</a>
+                </div>
+            </div>
+            
+            <!-- Registration Form -->
+            <div class="form-container hidden" id="register-form">
+                <h2 class="form-title">Create Account</h2>
+                <p class="form-subtitle">Join OXBRIDGE today and start your learning journey.</p>
+                
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="register-name">Full Name</label>
+                        <input type="text" id="register-name" placeholder="Enter your full name" required>
+                        <div class="error-message" id="register-name-error">Please enter your full name</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-email">Email Address</label>
+                        <input type="email" id="register-email" placeholder="Enter your email" required>
+                        <div class="error-message" id="register-email-error">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" placeholder="Create a password" required>
+                        <div class="error-message" id="register-password-error">Password must be at least 6 characters</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Password</label>
+                        <input type="password" id="register-confirm" placeholder="Confirm your password" required>
+                        <div class="error-message" id="register-confirm-error">Passwords do not match</div>
+                    </div>
+                    
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
+                
+                <div class="toggle-form">
+                    Already have an account? <a href="#" id="show-login">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="authorization.js"></script>
+</body>
+</html>

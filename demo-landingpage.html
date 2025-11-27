@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OXBRIDGE - Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">📚 OXBRIDGE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <span class="user-greeting" id="userGreeting">Welcome!</span>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to OXBRIDGE</h1>
+        <p>Unlock your potential with our expert-led courses</p>
+        <button class="btn">Study with AI</button>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Featured Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">💻</div>
+                <div class="course-content">
+                    <h3 class="course-title">CSC401: Introduction to Algorithm</h3>
+                    <p class="course-description">The Algorithms and Complexity Analysis course introduces students to the principles and techniques of evaluating algorithmic efficiency and performance. It focuses on the mathematical foundations of algorithm analysis, including Big-O, Ω (Omega), and Θ (Theta) notations for expressing asymptotic bounds. Students will learn to determine time and space complexity for both simple and recursive algorithms, develop and solve recurrence relations, and explore trade-offs in computational resources.</p>
+                    <div class="course-meta">
+                        <span>⏱️ 3 weeks</span>
+                    </div>
+                    <button class="course-btn">View Course</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">💽</div>
+                <div class="course-content">
+                    <h3 class="course-title">CSC 403: Distributed Computing</h3>
+                    <p class="course-description">The course provides both theoretical and practical knowledge, equipping students with the skills needed to design, implement, and manage distributed systems. Students will learn how to address real-world challenges, including performance, availability, and consistency, while understanding the nuances of fault tolerance and security in a distributed environment</p>
+                    <div class="course-meta">
+                        <span>⏱️ 3 weeks</span>
+                    </div>
+                    <button class="course-btn">View Course</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">📊</div>
+                <div class="course-content">
+                    <h3 class="course-title">INS 401: Project Managment</h3>
+                    <p class="course-description">This course starts with an introduction to project management and the project management lifecycle, including the systems development lifecycle (SDLC) and technology used to support project management processes. Students will delve into managing project teams, focusing on team planning, leadership, motivation, and managing conflict, especially in global teams. The course also covers effective communication strategies and the importance of communication within project teams.</p>
+                    <div class="course-meta">
+                        <span>⏱️ 3 weeks</span>
+                    </div>
+                    <button class="course-btn">View Course</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">📱</div>
+                <div class="course-content">
+                    <h3 class="course-title">COS409: Research Methodology and Technical Writing</h3>
+                    <p class="course-description">The course emphasises practical skills, guiding students through problem formulation, data collection, analysis, interpretation, and technical report writing. By the end, learners will be equipped not only to conduct simple research projects but also to defend their findings confidently while adhering to ethical standards of scholarly inquiry.</p>
+                    <div class="course-meta">
+                        <span>⏱️ 3 weeks</span>
+                    </div>
+                    <button class="course-btn">View Course</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 OXBRIDGE. All rights reserved.</p>
+    </footer>
+
+    <!-- Course Viewer Modal -->
+    <div class="course-modal" id="courseModal">
+        <div class="course-modal-content">
+            <div class="course-modal-header">
+                <h2 class="course-modal-title" id="modalCourseTitle">Course Title</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="course-modal-body">
+                <div class="pdf-viewer-container" id="pdfViewerContainer">
+                    <div class="pdf-controls" id="pdfControls" style="display: none;">
+                        <button class="pdf-nav-btn" id="prevPage">Previous</button>
+                        <span class="pdf-page-info">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
+                        <button class="pdf-nav-btn" id="nextPage">Next</button>
+                    </div>
+                    <div class="pdf-viewer">
+                        <iframe class="pdf-iframe" id="pdfFrame" src=""></iframe>
+                    </div>
+                </div>
+                <div class="no-pdf-message" id="noPdfMessage">
+                    <h3>Course Materials Coming Soon</h3>
+                    <p>This course is currently being prepared. Materials will be available shortly.</p>
+                </div>
+                <div class="loading" id="pdfLoading" style="display: none;">
+                    Loading course materials...
+                </div>
+            </div>
+            <div class="course-resources" id="courseResources" style="display: none;">
+                <h3 class="resources-title">Course Resources</h3>
+                <div class="resource-list" id="resourceList">
+                    <!-- Resources will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="landing.js"></script>
+</body>
+</html>
